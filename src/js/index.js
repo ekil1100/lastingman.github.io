@@ -1,18 +1,15 @@
-import '../css/animate.css';
-import '../css/icomoon.css';
-import '../css/bootstrap.css';
-import '../css/style.css';
-import '../css/index.css';
+// html template
+import '../index.html';
 
+// style sheets
+import 'purecss';
+import 'font-awesome-webpack';
+import '../style/main.css';
+import '../style/sass/main.scss';
 
-import './jquery.min';
-import './jquery.easing.1.3';
-import './bootstrap.min';
-import './jquery.waypoints.min';
-import './jquery.easypiechart.min';
-import './main';
+// js files
+import './components/navbar.js';
+import './components/about.js';
 
-
-import '../images/bg_img.jpg';
-import '../images/icon.jpg';
-import '../images/profile_img.jpg';
+// other
+// import '../resume_2018_v2.pdf';

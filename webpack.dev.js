@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
 
@@ -13,14 +14,32 @@ module.exports = merge(common, {
         {
           loader: 'css-loader',
           options: {
-            sourceMap: true,
-            '-autoprefixer': true //禁用autoprefixer以确保为兼容性而废弃的css不被删除
+            sourceMap: true
           }
         },
         'postcss-loader'
       ]
+    },{
+      test: /\.scss$/,
+      use: [
+        'style-loader',
+        {
+          loader: 'css-loader',
+          options: {
+            sourceMap: true
+          }
+        },
+        'postcss-loader',
+        'sass-loader'
+      ]
     }]
   },
+
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify('development')
+    })
+  ],
 
   devServer: {
     contentBase: path.resolve(__dirname, 'docs'),

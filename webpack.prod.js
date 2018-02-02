@@ -15,11 +15,23 @@ module.exports = merge(common, {
           loader: 'css-loader',
           options: {
             sourceMap: true,
-            minimize: true,
-            '-autoprefixer': true //禁用autoprefixer以确保为兼容性而废弃的css不被删除
+            minimize: true
           }
         },
         'postcss-loader'
+      ])
+    },{
+      test: /\.scss$/,
+      use: ExtractTextPlugin.extract([
+        {
+          loader: 'css-loader',
+          options: {
+            sourceMap: true,
+            minimize: true
+          }
+        },
+        'postcss-loader',
+        'sass-loader'
       ])
     }]
   },
