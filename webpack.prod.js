@@ -6,8 +6,6 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CnameWebpackPlugin = require('cname-webpack-plugin');
 
 module.exports = merge(common, {
-  devtool: 'source-map',
-
   module: {
     rules: [{
       test: /\.css$/,
@@ -15,7 +13,6 @@ module.exports = merge(common, {
         {
           loader: 'css-loader',
           options: {
-            sourceMap: true,
             minimize: true
           }
         },
@@ -27,7 +24,6 @@ module.exports = merge(common, {
         {
           loader: 'css-loader',
           options: {
-            sourceMap: true,
             minimize: true
           }
         },
@@ -47,9 +43,7 @@ module.exports = merge(common, {
 
     /* 抽取出chunk的css */
     new ExtractTextPlugin('bundle.css'),
-    new UglifyJSPlugin({
-      sourceMap: true
-    }),
+    new UglifyJSPlugin({}),
     new CnameWebpackPlugin({
       domain: 'www.likezheng.net',
     }),
