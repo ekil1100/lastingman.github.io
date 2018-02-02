@@ -1,86 +1,72 @@
 $grey: #666;
-$purple:  #a600ff;
-
+$purple: #a600ff;
 
 body {
   font: 400 16px/1.5 "Cutive Mono","Courier New",FangSong,STFangsong,"Helvetica Neue",Helvetica,Arial,sans-serif;
   color: #666;
 }
 
-a{
+a {
   text-decoration: none;
   color: #0085ff;
 
-  &.icon{
-    margin: 0 20px;
+  &:hover{
+    color: #000;
   }
 
+  &.icon {
+    margin: 0 20px;
+  }
 }
 
 #navbar {
   height: 70px;
 }
 
-.resume{
+.resume {
   display: flex;
   justify-content: center;
 
-  .button{
+  .button {
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 3px;
     padding: 10px;
-    border: 2px solid;
+    border: 1px solid;
+    color: $grey;
 
-    &:hover{
+    &:hover {
       border-color: #000;
       color: #000;
-      animation: pulse 0.2s 2 both;
     }
 
-    span{
+    span {
       margin-left: 10px;
     }
   }
 }
 
-@keyframes pulse {
-  from {
-    transform: scale3d(1, 1, 1);
-  }
-
-  50% {
-    transform: scale3d(1.05, 1.05, 1.05);
-  }
-
-  to {
-    transform: scale3d(1, 1, 1);
-  }
-}
-
-
-
-.view-more{
+.view-more {
   padding-left: 40px;
 }
 
-.contact{
+.contact {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-grow: row;
 }
 
-.github{
+.github {
   color: purple;
 }
 
-.linkedin{
+.linkedin {
   color: #0084bf;
 }
 
-.codepen{
+.codepen {
   color: #000;
 }
 
@@ -103,19 +89,19 @@ a{
   top: 0;
   z-index: 1;
   box-sizing: border-box;
+  background-color: #fff;
 }
 
 .pure-menu-heading {
   text-transform: none;
   font-variant: small-caps;
 
-
   &:hover {
     color: #000;
   }
 }
 
-.navbar-list{
+.navbar-list {
   display: flex;
   flex-grow: row;
   justify-content: center;
@@ -123,7 +109,7 @@ a{
   padding: 0;
 }
 
-.navbar-item{
+.navbar-item {
   margin: 0 20px;
 }
 
@@ -141,16 +127,12 @@ a{
   }
 }
 
-
-
-
-
 .title {
   font-variant: small-caps;
   font-size: 24px;
   text-align: center;
 }
 
-.text-center{
+.text-center {
   text-align: center;
 }
