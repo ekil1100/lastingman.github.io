@@ -10,5 +10,6 @@ import '../style/sass/main.scss';
 // js files
 import './components/navbar.js';
 import './components/about.js';
+import './components/footer';
 
 // other

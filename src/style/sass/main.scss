@@ -20,7 +20,7 @@ a {
 }
 
 #navbar {
-  height: 70px;
+  height: 75px;
 }
 
 .resume {
@@ -56,6 +56,8 @@ a {
   justify-content: center;
   align-items: center;
   flex-grow: row;
+  margin: 32px auto;
+  padding: 32px 0;
 }
 
 .github {
@@ -87,7 +89,7 @@ a {
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 1;
+  z-index: 3;
   box-sizing: border-box;
   background-color: #fff;
 }
