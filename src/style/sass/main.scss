@@ -1,11 +1,39 @@
 $grey: #777;
+$purple:  #a600ff;
+
 
 body {
-  font: 400 14px/1.5 "Cutive Mono","Courier New",FangSong,STFangsong,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font: 400 16px/1.5 "Cutive Mono","Courier New",FangSong,STFangsong,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #111;
+}
+
+a.icon{
+  text-decoration: none;
+  margin: 0 20px;
 }
 
 #navbar {
   height: 50px;
+}
+
+
+.contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: row;
+}
+
+.github{
+  color: purple;
+}
+
+.linkedin{
+  color: #0084bf;
+}
+
+.codepen{
+  color: #000;
 }
 
 .content {

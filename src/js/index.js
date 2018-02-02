@@ -3,6 +3,7 @@ import '../index.html';
 
 // style sheets
 import 'purecss';
+import 'font-awesome-webpack';
 import '../style/main.css';
 import '../style/sass/main.scss';
 
