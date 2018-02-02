@@ -45,7 +45,7 @@ module.exports = merge(common, {
     new ExtractTextPlugin('bundle.css'),
     new UglifyJSPlugin({}),
     new CnameWebpackPlugin({
-      domain: 'www.likezheng.net',
+      domain: 'www.likezheng.org',
     }),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('production')
