@@ -5,12 +5,12 @@ class Navbar extends React.Component {
 
   render() {
     return (
-      <div className="like-navbar pure-menu pure-menu-horizontal pure-menu-fixed">
-        <a className="pure-menu-heading" href="/">Like</a>
-        <ul className="pure-menu-list">
-            <li className="pure-menu-item"><a href="#about" className="pure-menu-link">About</a></li>
-            <li className="pure-menu-item"><a href="#project" className="pure-menu-link">Project</a></li>
-            <li className="pure-menu-item"><a href="#resume" className="pure-menu-link">Resume</a></li>
+      <div className="like-navbar">
+        <ul className='navbar-list'>
+          <li className='navbar-item'><a href="/" className='navbar-link'>Like</a></li>
+          <li className='navbar-item'><a href="#about" className='navbar-link'>About</a></li>
+          <li className='navbar-item'><a href="#project" className='navbar-link'>Project</a></li>
+          <li className='navbar-item'><a href="#resume" className='navbar-link'>Resume</a></li>
         </ul>
       </div>
     );

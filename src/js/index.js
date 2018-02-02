@@ -10,3 +10,6 @@ import '../style/sass/main.scss';
 // js files
 import './components/navbar.js';
 import './components/about.js';
+
+// other
+// import '../resume_2018_v2.pdf';

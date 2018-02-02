@@ -25,7 +25,7 @@ module.exports = {
       test: /\.woff(2)?(\?[a-z0-9#=&.]+)?$/,
       use: 'url-loader?name=assetes/font/[name].[hash].[ext]'
     }, {
-      test: /\.(ttf|eot|svg)?(\?[a-z0-9#=&.]+)?$/,
+      test: /\.(ttf|eot|svg|pdf)?(\?[a-z0-9#=&.]+)?$/,
       use: 'file-loader?name=assetes/font/[name].[hash].[ext]'
     }, {
       // 图片加载器，雷同file-loader，更适合图片，可以将较小的图片转成base64，减少http请求
