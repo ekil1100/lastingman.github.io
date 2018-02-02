@@ -1,0 +1,53 @@
+$grey: #777;
+
+body {
+  font: 400 14px/1.5 "Cutive Mono","Courier New",FangSong,STFangsong,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#navbar {
+  height: 50px;
+}
+
+.content {
+  position: relative;
+  max-width: 800px;
+  padding: 32px 24px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.like-navbar {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #aaa;
+  font-size: 18px;
+}
+
+.pure-menu-heading {
+  text-transform: none;
+  font-variant: small-caps;
+  color: $grey;
+
+  &:hover {
+    color: #000;
+  }
+}
+
+.pure-menu-link {
+  font-variant: small-caps;
+
+  &:focus {
+    background-color: inherit;
+  }
+
+  &:hover {
+    background-color: inherit;
+    color: #000;
+  }
+}
+
+.title {
+  font-variant: small-caps;
+  font-size: 24px;
+  text-align: center;
+}
