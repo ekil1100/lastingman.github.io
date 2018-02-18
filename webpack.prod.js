@@ -4,6 +4,8 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const common = require('./webpack.common.js');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CnameWebpackPlugin = require('cname-webpack-plugin');
+const LicenseWebpackPlugin = require('license-webpack-plugin').LicenseWebpackPlugin;
+
 
 module.exports = merge(common, {
   module: {
@@ -42,6 +44,10 @@ module.exports = merge(common, {
     // }),
 
     /* 抽取出chunk的css */
+    new LicenseWebpackPlugin({
+      pattern: /.*/,
+      outputFilename: 'LICENSE'
+    }),
     new ExtractTextPlugin('bundle.css'),
     new UglifyJSPlugin({}),
     new CnameWebpackPlugin({
