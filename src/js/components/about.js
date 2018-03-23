@@ -10,16 +10,15 @@ class About extends React.Component {
     return (
       <div className='like-about'>
         <p className='title'>Like Zheng</p>
-        <p className='text-center'>Front-end Engineer</p>
-        {/*<p className='text-center'>React & Redux, Javascript, Python</p>*/}
+        <p className='text-center'>Front-end Developer</p>
+        <p className='text-center'>Javascript, React+Redux, Python</p>
         <p className='title'>Experience</p>
         <ul>
-          <li>Jan-2018~Feb-2018 Tweebaa Inc. (Toronto, Canada)</li>
           <li>May-2017~Aug-2017 Daowen Network Technology (Hangzhou, China)</li>
           <li>May-2014~Aug-2014 Zhejiang Equity Exchange (Hangzhou, China)</li>
           <li>Sep-2012~Dec-2017 Computer Engineering (University of Guelph)</li>
         </ul>
-        <p className='title'>Project</p>
+        <p className='title'>Projects</p>
         <ul>
           <li>
             <a href='https://github.com/lastingman/webpack-react-scaffolding'>webpack-react-scaffolding</a>
