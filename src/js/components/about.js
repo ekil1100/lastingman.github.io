@@ -1,4 +1,4 @@
-import resume from '../../resume_2018_v2.pdf';
+import resume from '../../Resume-LikeZheng.pdf';
 
 
 class About extends React.Component {
