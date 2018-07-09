@@ -108,23 +108,25 @@
 
 
 
-  <meta name="description" content="Fear less, Respect more.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Last">
-<meta property="og:url" content="https://www.likezheng.org/index.html">
+  <meta name="description" content="现今比较流行的静态网页框架有Jeklly，Hexo和Hugo。 Jeklly就不多说了，网上有很多详细的教程，强大的RubyGems社区，唯一的缺点就是当你博客的页面多了以后每次编译的速度会变得很慢。 Hugo是基于go编写的静态网页生成器，它的优点就是编译速度快，但是它没有Hexo这样强大的中文社区，对中文博客不是很友好，当然如果你想写英文博客，那么它就是你的首选。 我选择Hexo的另一个原因是">
+<meta name="keywords" content="Blog,Hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="用Hexo部署个人博客">
+<meta property="og:url" content="https://www.likezheng.org/2018/07/09/hexo/index.html">
 <meta property="og:site_name" content="Last">
-<meta property="og:description" content="Fear less, Respect more.">
+<meta property="og:description" content="现今比较流行的静态网页框架有Jeklly，Hexo和Hugo。 Jeklly就不多说了，网上有很多详细的教程，强大的RubyGems社区，唯一的缺点就是当你博客的页面多了以后每次编译的速度会变得很慢。 Hugo是基于go编写的静态网页生成器，它的优点就是编译速度快，但是它没有Hexo这样强大的中文社区，对中文博客不是很友好，当然如果你想写英文博客，那么它就是你的首选。 我选择Hexo的另一个原因是">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-07-09T14:52:40.992Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Last">
-<meta name="twitter:description" content="Fear less, Respect more.">
+<meta name="twitter:title" content="用Hexo部署个人博客">
+<meta name="twitter:description" content="现今比较流行的静态网页框架有Jeklly，Hexo和Hugo。 Jeklly就不多说了，网上有很多详细的教程，强大的RubyGems社区，唯一的缺点就是当你博客的页面多了以后每次编译的速度会变得很慢。 Hugo是基于go编写的静态网页生成器，它的优点就是编译速度快，但是它没有Hexo这样强大的中文社区，对中文博客不是很友好，当然如果你想写英文博客，那么它就是你的首选。 我选择Hexo的另一个原因是">
 
 
 
 
 
 
-  <link rel="canonical" href="https://www.likezheng.org/"/>
+  <link rel="canonical" href="https://www.likezheng.org/2018/07/09/hexo/"/>
 
 
 
@@ -134,7 +136,7 @@
   };
 </script>
 
-  <title>Last</title>
+  <title>用Hexo部署个人博客 | Last</title>
   
 
 
@@ -181,8 +183,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -219,7 +220,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
     <a href="/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
   </li>
@@ -279,9 +280,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -313,11 +314,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/07/09/hexo/" itemprop="url">
-                  用Hexo部署个人博客
-                </a>
+          <h1 class="post-title" itemprop="name headline">用Hexo部署个人博客
               
             
           </h1>
@@ -394,9 +391,7 @@
       
 
       
-        
-          
-            <p>现今比较流行的静态网页框架有<a href="https://jekyllrb.com/" target="_blank" rel="noopener">Jeklly</a>，<a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>和<a href="http://gohugo.io/" target="_blank" rel="noopener">Hugo</a>。</p>
+        <p>现今比较流行的静态网页框架有<a href="https://jekyllrb.com/" target="_blank" rel="noopener">Jeklly</a>，<a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>和<a href="http://gohugo.io/" target="_blank" rel="noopener">Hugo</a>。</p>
 <p>Jeklly就不多说了，网上有很多详细的教程，强大的<code>RubyGems</code>社区，唯一的缺点就是当你博客的页面多了以后每次编译的速度会变得很慢。</p>
 <p>Hugo是基于go编写的静态网页生成器，它的优点就是编译速度快，但是它没有Hexo这样强大的中文社区，对中文博客不是很友好，当然如果你想写英文博客，那么它就是你的首选。</p>
 <p>我选择Hexo的另一个原因是因为<a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">Theme Next</a>，很全面的一个Hexo主题，支持中文和自定义配置，而且这个项目在持续成长中，相信后面会有很多优秀的插件来满足更多的需求。</p>
@@ -418,8 +413,6 @@
 <p>然后在<code>_config.yml</code>中把<code>theme: landspace</code>选项改为<code>theme: next</code>就可以了：</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Extensions</span></span><br><span class="line"><span class="comment">## Plugins:         https://hexo.io/plugins/</span></span><br><span class="line"><span class="comment">## Themes:          https://hexo.io/themes/</span></span><br><span class="line"><span class="attr">theme:</span>              <span class="string">next</span></span><br></pre></td></tr></table></figure>
 
-          
-        
       
     </div>
 
@@ -437,14 +430,22 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Blog/" rel="tag"># Blog</a>
+          
+            <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+          
+        </div>
+      
+
+      
+      
+      
 
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -454,14 +455,19 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -482,8 +488,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -569,6 +584,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署"><span class="nav-number">2.</span> <span class="nav-text">部署</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Next主题"><span class="nav-number">3.</span> <span class="nav-text">安装Next主题</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -696,6 +727,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
+
+
 
   
 
