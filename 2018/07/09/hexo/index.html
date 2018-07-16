@@ -61,16 +61,16 @@
 <link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/letter108.png?v=6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=6.3.0">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/letter32.png?v=6.3.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png?v=6.3.0">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/letter16.png?v=6.3.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png?v=6.3.0">
 
 
-  <link rel="mask-icon" href="/images/letter.svg?v=6.3.0" color="#222">
+  <link rel="mask-icon" href="/images/safari-pinned-tab.svg?v=6.3.0" color="#222">
 
 
 
@@ -116,7 +116,7 @@
 <meta property="og:site_name" content="Last">
 <meta property="og:description" content="现今比较流行的静态网页框架有Jeklly，Hexo和Hugo。 Jeklly就不多说了，网上有很多详细的教程，强大的RubyGems社区，唯一的缺点就是当你博客的页面多了以后每次编译的速度会变得很慢。 Hugo是基于go编写的静态网页生成器，它的优点就是编译速度快，但是它没有Hexo这样强大的中文社区，对中文博客不是很友好，当然如果你想写英文博客，那么它就是你的首选。 我选择Hexo的另一个原因是">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-07-09T14:52:40.992Z">
+<meta property="og:updated_time" content="2018-07-16T02:18:15.873Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="用Hexo部署个人博客">
 <meta name="twitter:description" content="现今比较流行的静态网页框架有Jeklly，Hexo和Hugo。 Jeklly就不多说了，网上有很多详细的教程，强大的RubyGems社区，唯一的缺点就是当你博客的页面多了以后每次编译的速度会变得很慢。 Hugo是基于go编写的静态网页生成器，它的优点就是编译速度快，但是它没有Hexo这样强大的中文社区，对中文博客不是很友好，当然如果你想写英文博客，那么它就是你的首选。 我选择Hexo的另一个原因是">
@@ -343,6 +343,22 @@
             
 
             
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-07-16 10:18:15" itemprop="dateModified" datetime="2018-07-16T10:18:15+08:00">2018-07-16</time>
+              
+            
           </span>
 
           
@@ -395,6 +411,7 @@
 <p>Jeklly就不多说了，网上有很多详细的教程，强大的<code>RubyGems</code>社区，唯一的缺点就是当你博客的页面多了以后每次编译的速度会变得很慢。</p>
 <p>Hugo是基于go编写的静态网页生成器，它的优点就是编译速度快，但是它没有Hexo这样强大的中文社区，对中文博客不是很友好，当然如果你想写英文博客，那么它就是你的首选。</p>
 <p>我选择Hexo的另一个原因是因为<a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">Theme Next</a>，很全面的一个Hexo主题，支持中文和自定义配置，而且这个项目在持续成长中，相信后面会有很多优秀的插件来满足更多的需求。</p>
+<a id="more"></a>
 <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>在安装之前需要确保你的系统已经安装了：</p>
 <ul>
 <li><a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a></li>
@@ -412,7 +429,11 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git submodule add https://github.com/theme-next/hexo-theme-next.git themes/next</span><br></pre></td></tr></table></figure>
 <p>然后在<code>_config.yml</code>中把<code>theme: landspace</code>选项改为<code>theme: next</code>就可以了：</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Extensions</span></span><br><span class="line"><span class="comment">## Plugins:         https://hexo.io/plugins/</span></span><br><span class="line"><span class="comment">## Themes:          https://hexo.io/themes/</span></span><br><span class="line"><span class="attr">theme:</span>              <span class="string">next</span></span><br></pre></td></tr></table></figure>
-
+<h2 id="Next主题配置"><a href="#Next主题配置" class="headerlink" title="Next主题配置"></a>Next主题配置</h2><p>创建<code>source/_data/next.yml</code>。在<code>themes/next</code>目录下有个默认的配置文件<code>_config.yml</code>。可以根据自己的需求从<code>_config.yml</code>选择需要的复制到<code>source/_data/next.yml</code>中。</p>
+<p><a href="https://theme-next.org/" target="_blank" rel="noopener">Next网站</a>中有非常详细的配置介绍。</p>
+<hr>
+<p>Coming soon</p>
+<h2 id="发布个人博客到Github和Gitcafe上"><a href="#发布个人博客到Github和Gitcafe上" class="headerlink" title="发布个人博客到Github和Gitcafe上"></a>发布个人博客到Github和Gitcafe上</h2>
       
     </div>
 
@@ -594,7 +615,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署"><span class="nav-number">2.</span> <span class="nav-text">部署</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Next主题"><span class="nav-number">3.</span> <span class="nav-text">安装Next主题</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署"><span class="nav-number">2.</span> <span class="nav-text">部署</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Next主题"><span class="nav-number">3.</span> <span class="nav-text">安装Next主题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Next主题配置"><span class="nav-number">4.</span> <span class="nav-text">Next主题配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#发布个人博客到Github和Gitcafe上"><span class="nav-number">5.</span> <span class="nav-text">发布个人博客到Github和Gitcafe上</span></a></li></ol></div>
             
 
           </div>
