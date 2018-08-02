@@ -86,7 +86,7 @@
     root: '/',
     scheme: 'Mist',
     version: '6.3.0',
-    sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false,"width":300},
     fancybox: false,
     fastclick: false,
     lazyload: false,
@@ -108,20 +108,22 @@
 
 
 
-  <meta name="description" content="现今比较流行的静态网页框架有Jeklly，Hexo和Hugo。 选择Hexo的原因是Next主题，主要是支持中文，不需要自己配置了。">
+  <meta name="description" content="Hexo安装部署流程~">
 <meta name="keywords" content="Blog,Hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="用Hexo部署个人博客">
 <meta property="og:url" content="https://www.likezheng.org/2018/07/09/hexo/index.html">
 <meta property="og:site_name" content="Last">
-<meta property="og:description" content="现今比较流行的静态网页框架有Jeklly，Hexo和Hugo。 选择Hexo的原因是Next主题，主要是支持中文，不需要自己配置了。">
+<meta property="og:description" content="Hexo安装部署流程~">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-07-24T13:46:29.175Z">
+<meta property="og:updated_time" content="2018-08-02T09:33:19.708Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="用Hexo部署个人博客">
-<meta name="twitter:description" content="现今比较流行的静态网页框架有Jeklly，Hexo和Hugo。 选择Hexo的原因是Next主题，主要是支持中文，不需要自己配置了。">
+<meta name="twitter:description" content="Hexo安装部署流程~">
 
 
+
+  <link rel="alternate" href="/atom.xml" title="Last" type="application/atom+xml" />
 
 
 
@@ -300,7 +302,7 @@
     <link itemprop="mainEntityOfPage" href="https://www.likezheng.org/2018/07/09/hexo/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Like">
+      <meta itemprop="name" content="Lastingman">
       <meta itemprop="description" content="Fear less, Respect more.">
       <meta itemprop="image" content="/images/avatar.jpg">
     </span>
@@ -356,7 +358,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-07-24 21:46:29" itemprop="dateModified" datetime="2018-07-24T21:46:29+08:00">2018-07-24</time>
+                <time title="修改时间：2018-08-02 17:33:19" itemprop="dateModified" datetime="2018-08-02T17:33:19+08:00">2018-08-02</time>
               
             
           </span>
@@ -405,6 +407,8 @@
           
 
           
+              <div class="post-description">Hexo安装部署流程~</div>
+          
 
         </div>
       </header>
@@ -420,9 +424,8 @@
 
       
         <p>现今比较流行的静态网页框架有<a href="https://jekyllrb.com/" target="_blank" rel="noopener">Jeklly</a>，<a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>和<a href="http://gohugo.io/" target="_blank" rel="noopener">Hugo</a>。</p>
-<p>选择<code>Hexo</code>的原因是<a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">Next主题</a>，主要是支持中文，不需要自己配置了。</p>
-<a id="more"></a>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>在安装之前需要确保系统已经安装了：</p>
+<p>选择<code>Hexo</code>的原因是<a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">Next 主题</a>，主要是支持中文，不需要自己配置了。</p>
+<h2><span id="安装">安装</span></h2><p>在安装之前需要确保系统已经安装了：</p>
 <ul>
 <li><a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a></li>
 <li><a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">Node.js</a></li>
@@ -431,11 +434,11 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 检查git是否安装</span></span><br><span class="line">git --version</span><br><span class="line"><span class="comment"># 检查node是否安装</span></span><br><span class="line">node --version</span><br></pre></td></tr></table></figure>
 <p>然后就可以安装<code>Hexo</code>的命令行工具了，运行下面的命令：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn global add hexo-cli</span><br></pre></td></tr></table></figure>
-<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><p>安装成功以后运行下面的命令创建工作目录：</p>
+<h2><span id="部署">部署</span></h2><p>安装成功以后运行下面的命令创建工作目录：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init &lt;folder name&gt; &amp;&amp; <span class="built_in">cd</span> &lt;folder name&gt;</span><br></pre></td></tr></table></figure>
 <p>安装依赖包：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn</span><br></pre></td></tr></table></figure>
-<p>安装Next主题：</p>
+<p>安装 Next 主题：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git submodule add https://github.com/theme-next/hexo-theme-next.git themes/next</span><br></pre></td></tr></table></figure>
 <p>然后在<code>_config.yml</code>中更改属性<code>theme</code>：</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">next</span></span><br></pre></td></tr></table></figure>
@@ -443,18 +446,18 @@
 <ul>
 <li>创建<code>source/_data/next.yml</code>文件。</li>
 <li>在<code>themes/next</code>目录下有个默认的配置文件<code>_config.yml</code>。可以根据自己的需求从<code>_config.yml</code>选择需要的配置复制到<code>source/_data/next.yml</code>中。</li>
-<li><a href="https://theme-next.org/" target="_blank" rel="noopener">Next网站</a>中有非常详细的配置介绍。</li>
+<li><a href="https://theme-next.org/" target="_blank" rel="noopener">Next 网站</a>中有非常详细的配置介绍。</li>
 </ul>
-<h2 id="工作流程"><a href="#工作流程" class="headerlink" title="工作流程"></a>工作流程</h2><p>创建新的post：</p>
+<h2><span id="工作流程">工作流程</span></h2><p>创建新的 post：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new post &lt;file name&gt;</span><br></pre></td></tr></table></figure>
-<p>创建新的draft:</p>
+<p>创建新的 draft:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new draft &lt;file name&gt;</span><br></pre></td></tr></table></figure>
-<p>从draft发布新的post：</p>
+<p>从 draft 发布新的 post：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo publish &lt;file name&gt;</span><br></pre></td></tr></table></figure>
 <p>运行<code>hexo server</code>：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server -d</span><br></pre></td></tr></table></figure>
-<p><code>-d</code>是<code>--draft</code>的简写，默认是不渲染draft文章的。</p>
-<h2 id="发布博客到Github"><a href="#发布博客到Github" class="headerlink" title="发布博客到Github"></a>发布博客到Github</h2><p>下载<code>hexo-deployer-git</code>：</p>
+<p><code>-d</code>是<code>--draft</code>的简写，默认是不渲染 draft 文章的。</p>
+<h2><span id="发布博客到-github">发布博客到 Github</span></h2><p>下载<code>hexo-deployer-git</code>：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn add hexo-deployer-git</span><br></pre></td></tr></table></figure>
 <p>在<code>_config.yml</code>中添加<code>deploy</code>属性：</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">  repo:</span> <span class="string">&lt;repository</span> <span class="string">url&gt;</span></span><br><span class="line"><span class="attr">  branch:</span> <span class="string">[branch]</span></span><br><span class="line"><span class="attr">  message:</span> <span class="string">[message]</span></span><br></pre></td></tr></table></figure>
@@ -562,9 +565,9 @@
             
               <img class="site-author-image" itemprop="image"
                 src="/images/avatar.jpg"
-                alt="Like" />
+                alt="Lastingman" />
             
-              <p class="site-author-name" itemprop="name">Like</p>
+              <p class="site-author-name" itemprop="name">Lastingman</p>
               <p class="site-description motion-element" itemprop="description">Fear less, Respect more.</p>
           </div>
 
@@ -592,8 +595,6 @@
                     
                       
                     
-                      
-                    
                     <span class="site-state-item-count">1</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
@@ -611,6 +612,8 @@
                     
                       
                     
+                      
+                    
                     <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
@@ -619,6 +622,13 @@
             </nav>
           
 
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
           
 
           
@@ -656,7 +666,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署"><span class="nav-number">2.</span> <span class="nav-text">部署</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#工作流程"><span class="nav-number">3.</span> <span class="nav-text">工作流程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#发布博客到Github"><span class="nav-number">4.</span> <span class="nav-text">发布博客到Github</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">部署</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">工作流程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">发布博客到 Github</span></a></li></ol></div>
             
 
           </div>
@@ -678,9 +688,9 @@
       <div class="footer-inner">
         <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
   <span class="with-love" id="animate">
-    <i class="fa fa-user"></i>
+    <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">Like</span>
+  <span class="author" itemprop="copyrightHolder">Lastingman</span>
 
   
 
@@ -690,7 +700,7 @@
 
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动 v3.7.1</div>
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
 
@@ -698,7 +708,7 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Mist</a> v6.3.0</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Mist</a></div>
 
 
 
